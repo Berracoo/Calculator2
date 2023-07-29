@@ -115,6 +115,7 @@ public class Main {
     }
 
     static void modding() {
+           // this method can be also done via methods that return a value.
         int dividend, divider, result;
         Scanner input = new Scanner(System.in);
         System.out.print("Choose a dividend : ");
@@ -138,6 +139,7 @@ public class Main {
     }
 
     static void areaAndCircumferenceOfRectangle() {
+           // this method can be also done via methods that return a value.
         int width, length, area, circumference;
         Scanner input = new Scanner(System.in);
         System.out.print("Choose the width of the rectangle : ");
