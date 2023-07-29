@@ -194,6 +194,12 @@ public class Main {
                 case 6:
                     factorial();
                     break;
+                case 7:
+                    modding();
+                    break;
+                case 8:
+                    areaAndCircumferenceOfRectangle();
+                    break;
                 case 0:
                     System.out.println("Logging out of the app, see you later!");
                     break;
