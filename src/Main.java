@@ -88,28 +88,28 @@ public class Main {
     }
 
     static void involution() {
-        int exponent, power, result = 1;
+        int exponent, base, result = 1;
         Scanner input = new Scanner(System.in);
-        System.out.print("Which number will you choose as an exponent : ");
+        System.out.print("Which number will you choose as an base : ");
         exponent = input.nextInt();
-        System.out.print("Which number will you choose as a power : ");
+        System.out.print("Which number will you choose as a exponent : ");
         power = input.nextInt();
-        // when the power equals to 0 the result will directly equal to 1 ,so we stop the scope beforehand.
-        while (power == 0) {
+        // when the exponent equals to 0 the result will directly equal to 1 ,so we stop the scope beforehand.
+        while (exponent == 0) {
             result = 1;
             break;
         }
-        for (int i = 1; i <= power; i++) {
-            // when the exponent equals to 1, the result will directly equal to 1, so we don't need to read the rest of the code.
+        for (int i = 1; i <= exponent; i++) {
+            // when the base equals to 1, the result will directly equal to 1, so we don't need to read the rest of the code.
             if (exponent == 1) {
                 result = 1;
                 break;
-                // when exponent is zero the result will be automatically zero.
-            } else if (exponent == 0) {
+                // when base is zero the result will be automatically zero.
+            } else if (base == 0) {
                 result = 0;
                 break;
             }
-            result *= exponent;
+            result *= base;
         }
         System.out.println("Final result : " + result);
     }
